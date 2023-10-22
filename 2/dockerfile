@@ -1,0 +1,7 @@
+from python:3.7.4
+add . /code
+workdir /code
+
+run pip install -r requirements.txt
+RUN python3 /code/manage.py migrate
+cmd python3 /code/manage.py runserver 0.0.0.0:8000

@@ -1,0 +1,2 @@
+from nginx:latest
+copy static-html usr/share/nginx/html
